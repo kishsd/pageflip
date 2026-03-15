@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Flip Demo</title>
+    <link rel="stylesheet" href="page-flip.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #555;
+        }
+        .description {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #page-flip-container {
+            margin: 20px auto;
+        }
+        .customization-note {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9f7fe;
+            border-left: 4px solid #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Page Flip Book</h1>
+        <p class="description">A clean and customizable page flip effect for your website.</p>
+        <div id="page-flip-container"></div>
+        <div class="customization-note">
+            <h3>Customization Instructions:</h3>
+            <ul>
+                <li>Replace the image URLs in the JavaScript array with your own page images.</li>
+                <li>Adjust the CSS in page-flip.css for styling (colors, sizes, etc.).</li>
+                <li>Modify the HTML structure above for layout changes.</li>
+                <li>The audio file 'page-flip.mp3' can be replaced with your own sound effect.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="page-flip.js"></script>
+    <script>
+        // Array of page images - replace with your own images
+        var pages = [
+            'https://via.placeholder.com/400x600/ffffff/000000?text=Page+1',
+            'https://via.placeholder.com/400x600/f0f0f0/000000?text=Page+2',
+            'https://via.placeholder.com/400x600/ffffff/000000?text=Page+3',
+            'https://via.placeholder.com/400x600/f0f0f0/000000?text=Page+4',
+            'https://via.placeholder.com/400x600/ffffff/000000?text=Page+5',
+            'https://via.placeholder.com/400x600/f0f0f0/000000?text=Page+6'
+        ];
+
+        // Initialize the page flip
+        var pageFlip = new Pageflip('#page-flip-container', pages);
+    </script>
+</body>
+</html>
