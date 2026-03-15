@@ -48,7 +48,7 @@
         <div class="customization-note">
             <h3>Customization Instructions:</h3>
             <ul>
-                <li><strong>Add your photos:</strong> Place your page images in the 'images' folder (e.g., page1.jpg, page2.jpg, etc.) and update the JavaScript array with the correct filenames.</li>
+                <li><strong>Add your photos:</strong> Place your page images in the 'images' folder (e.g., page1.jpg, page2.jpg, etc.) and update the JavaScript array with the correct filenames. The first three pages use your existing images (titlepage.jpg, page2.jpg, page3.jpg), and the rest use placeholders.</li>
                 <li>Images should be around 400x600 pixels for best results, but the CSS will scale them.</li>
                 <li>Adjust the CSS in page-flip.css for styling (colors, sizes, etc.).</li>
                 <li>Modify the HTML structure above for layout changes.</li>
@@ -62,19 +62,18 @@
         // Array of page images - replace with your own images
         // Place your images in an 'images' folder and update the paths below
         var pages = [
-            'images/titlepage.jpg',  // Replace with your first page image
-            'images/page2.jpg',  // Replace with your second page image
-            'images/page3.jpg',  // And so on...
-            'images/page4.jpg',
-            'images/page5.jpg',
-            'images/page6.jpg',
-            'images/page7.jpg',
-            'images/page8.jpg', 
-            'images/page9.jpg',
-            'images/page10.jpg',
-            'images/page11.jpg',
-            'images/page12.jpg',    
-
+            'images/titlepage.jpg',  // Your title page
+            'images/page2.jpg',      // Your page 2
+            'images/page3.jpg',      // Your page 3
+            'https://via.placeholder.com/400x600/ffffff/000000?text=Page+4',  // Placeholder
+            'https://via.placeholder.com/400x600/f0f0f0/000000?text=Page+5',  // Placeholder
+            'https://via.placeholder.com/400x600/ffffff/000000?text=Page+6',  // Placeholder
+            'https://via.placeholder.com/400x600/f0f0f0/000000?text=Page+7',  // Placeholder
+            'https://via.placeholder.com/400x600/ffffff/000000?text=Page+8',  // Placeholder
+            'https://via.placeholder.com/400x600/f0f0f0/000000?text=Page+9',  // Placeholder
+            'https://via.placeholder.com/400x600/ffffff/000000?text=Page+10', // Placeholder
+            'https://via.placeholder.com/400x600/f0f0f0/000000?text=Page+11', // Placeholder
+            'https://via.placeholder.com/400x600/ffffff/000000?text=Page+12'  // Placeholder
         ];
 
         // Initialize the page flip
