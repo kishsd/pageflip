@@ -48,7 +48,8 @@
         <div class="customization-note">
             <h3>Customization Instructions:</h3>
             <ul>
-                <li>Replace the image URLs in the JavaScript array with your own page images.</li>
+                <li><strong>Add your photos:</strong> Place your page images in the 'images' folder (e.g., page1.jpg, page2.jpg, etc.) and update the JavaScript array with the correct filenames.</li>
+                <li>Images should be around 400x600 pixels for best results, but the CSS will scale them.</li>
                 <li>Adjust the CSS in page-flip.css for styling (colors, sizes, etc.).</li>
                 <li>Modify the HTML structure above for layout changes.</li>
                 <li>The audio file 'page-flip.mp3' can be replaced with your own sound effect.</li>
@@ -59,13 +60,21 @@
     <script src="page-flip.js"></script>
     <script>
         // Array of page images - replace with your own images
+        // Place your images in an 'images' folder and update the paths below
         var pages = [
-            'https://via.placeholder.com/400x600/ffffff/000000?text=Page+1',
-            'https://via.placeholder.com/400x600/f0f0f0/000000?text=Page+2',
-            'https://via.placeholder.com/400x600/ffffff/000000?text=Page+3',
-            'https://via.placeholder.com/400x600/f0f0f0/000000?text=Page+4',
-            'https://via.placeholder.com/400x600/ffffff/000000?text=Page+5',
-            'https://via.placeholder.com/400x600/f0f0f0/000000?text=Page+6'
+            'images/titlepage.jpg',  // Replace with your first page image
+            'images/page2.jpg',  // Replace with your second page image
+            'images/page3.jpg',  // And so on...
+            'images/page4.jpg',
+            'images/page5.jpg',
+            'images/page6.jpg',
+            'images/page7.jpg',
+            'images/page8.jpg', 
+            'images/page9.jpg',
+            'images/page10.jpg',
+            'images/page11.jpg',
+            'images/page12.jpg',    
+
         ];
 
         // Initialize the page flip
